@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="icon" type="x-icon" href="./images/favicon.png">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>BharatClap - Building Futures with Services and Employment</title>
+
+<!-- <link rel="stylesheet" href="css/style.css"> -->
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+    .container {
+        max-width: 800px;
+        margin: 125px auto;
+        padding: 20px;
+        /* background-color: #fff; */
+        border-radius: 8px;
+        /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.548); */
+        /* padding-top: 10px; */
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .boxes {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .box {
+        width: calc(33.33% - 20px);
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.493);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-bottom: 20px;
+    }
+    .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 4px 6px rgba(76, 79, 75, 0.671);
+    }
+    .box img {
+        display: block;
+        width: 60px;
+        height: auto;
+        margin: 0 auto 10px;
+    }
+    .box h3 {
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+        .box {
+            width: calc(50% - 20px);
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .box {
+            width: 100%;
+        }
+    }
+    footer {
+        margin-top: 40px;
+        text-align: center;
+        color: #666;
+    }
+    /* Responsive styles */
+    @media screen and (max-width: 768px) {
+        .box {
+            width: calc(50% - 20px);
+        }
+    }
+    @media screen and (max-width: 480px) {
+        .box {
+            width: 100%;
+        }
+    }
+
+
+    /* css for navbar */
+
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    /* background-color: hsl(35, 67%, 52%); */
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.715);
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 24px;
+    padding: 0;
+    display: flex;
+}
+
+.menu ul li {
+    margin: 0 10px;
+}
+
+.menu ul li a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    transition: all 0.3s ease;
+}
+
+.menu ul li a:hover {
+    background-color: #054864c2;
+    border-radius: 5px;
+}
+
+
+/* css for footer */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    text-align: center;
+    padding: 50px;
+}
+
+.footer {
+    background-color: #cfcfcf57;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.715);
+    color: black;
+    padding: 50px 0;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer-section h2 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.footer-section p {
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a {
+    color: black;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+}
+
+
+</style>
+</head>
+<body>
+
+
+    <div>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>
+            </div>
+        </nav>
+    </div>
+
+<div class="container">
+    <!-- <h1>BharatClap Registration Form</h1> -->
+    <div class="boxes">
+        <div class="box" onclick="window.location.href='staff.html'">
+            <img src="/assets/img/staff.svg" alt="Construction Staff Icon">
+            <h3>Construction Staff</h3>
+        </div>
+        <div class="box" onclick="window.location.href='contractor.html'">
+            <img src="/assets/img/contractor.svg" alt="Contractor Icon">
+            <h3>Contractor</h3>
+        </div>
+        <div class="box" onclick="window.location.href='worker.html'">
+            <img src="/assets/img/worker.svg" alt="Worker Icon">
+            <h3>Worker</h3>
+        </div>
+    </div>
+</div>
+
+<!-- footer section starts -->
+
+<footer class="footer">
+    <div class="footer-bottom">
+        &copy; Copyright <strong>BharatClap</strong>. All Rights Reserved
+    </div>
+</footer>
+
+<!-- footer section ends -->
+
+</body>
+</html>
